@@ -12,11 +12,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.hellocounter.ui.MainScreen
+import com.example.hellocounter.ui.theme.HelloCounterTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent { MaterialTheme { MainScreen() } }
+        setContent { HelloCounterTheme { MainScreen() } }
     }
 }
 
